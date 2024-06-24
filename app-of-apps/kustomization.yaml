@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: py-new-test 
+  janus-idp.io/tekton: py-new-test
+  backstage.io/kubernetes-id: py-new-test
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: py-new-test
+resources: 
+- application-dev.yaml 
+- application-stage.yaml 
+- application-prod.yaml  

@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: py-new-test-gitops-repository
+spec:
+  url: https://github.com/RHTAP-RHDH/pytest-new-gitops
